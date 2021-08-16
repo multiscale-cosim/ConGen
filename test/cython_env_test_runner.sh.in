@@ -1,0 +1,7 @@
+#!/bin/bash -x
+
+# Use the init script to set the ld and python path
+# We need to install to test the cython stuff
+. '${CMAKE_INSTALL_PREFIX}'/script/init.sh
+
+python python_unittest_runner.py -p  ./cython

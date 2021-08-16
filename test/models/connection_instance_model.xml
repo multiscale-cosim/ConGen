@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<neuroml xmlns="http://morphml.org/neuroml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:net="http://morphml.org/networkml/schema" xmlns:mml="http://morphml.org/morphml/schema" xmlns:meta="http://morphml.org/metadata/schema" xmlns:bio="http://morphml.org/biophysics/schema" xmlns:cml="http://morphml.org/channelml/schema" xsi:schemaLocation="http://morphml.org/neuroml/schema http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level3/NeuroML_Level3_v1.8.1.xsd" length_units="micrometer">
+
+    <populations xmlns="http://morphml.org/networkml/schema">
+        <population name="PopA" cell_type="iaf_psc_alpha">
+            <instances>
+                <instance id="0"/>
+                <instance id="1"/>
+                <instance id="2"/>
+                <instance id="3"/>
+                <instance id="4"/>
+                <instance id="5"/>
+                <instance id="6"/>
+            </instances>
+        </population>
+        <population name="PopB" cell_type="iaf_psc_alpha">
+            <instances>
+                <instance id="0"/>
+                <instance id="1"/>
+                <instance id="2"/>
+                <instance id="3"/>
+                <instance id="4"/>
+                <instance id="5"/>
+                <instance id="6"/>
+                <instance id="7"/>
+            </instances>
+        </population>
+    </populations>
+
+    <projections units="Physiological Units" xmlns="http://morphml.org/networkml/schema">
+        <projection name="PopA-PopB" source="PopA" target="PopB">
+            <synapse_props synapse_type="StaticSynapse" threshold="-20">
+                <weight> 90.0 </weight>
+                <internal_delay> 0.5 </internal_delay>
+            </synapse_props>
+            <connections>
+                <connection id="0" pre_cell_id="0" post_cell_id="5"/>
+                <connection id="1" pre_cell_id="1" post_cell_id="3"/>
+                <connection id="2" pre_cell_id="2" post_cell_id="6"/>
+                <connection id="3" pre_cell_id="3" post_cell_id="2"/>
+                <connection id="4" pre_cell_id="3" post_cell_id="1"/>
+                <connection id="5" pre_cell_id="4" post_cell_id="0"/>
+                <connection id="6" pre_cell_id="5" post_cell_id="3"/>
+                <connection id="7" pre_cell_id="6" post_cell_id="0"/>
+                <connection id="8" pre_cell_id="5" post_cell_id="4"/>
+                <connection id="9" pre_cell_id="6" post_cell_id="6"/>
+            </connections>
+        </projection>
+    </projections>
+</neuroml>

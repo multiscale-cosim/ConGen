@@ -1,0 +1,5 @@
+#!/bin/bash -x
+
+export PYTHONPATH=$PYTHONPATH:'${CMAKE_INSTALL_PREFIX}'/lib/python2.7/site-packages/:'${CMAKE_INSTALL_PREFIX}'/lib
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:'${CMAKE_INSTALL_PREFIX}'/lib/cython_lib

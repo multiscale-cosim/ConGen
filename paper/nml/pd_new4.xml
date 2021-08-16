@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<neuroml xmlns:net="http://morphml.org/networkml/schema" xmlns:bio="http://morphml.org/biophysics/schema" xmlns="http://morphml.org/neuroml/schema" xmlns:meta="http://morphml.org/metadata/schema" length_units="micrometer" xmlns:cml="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mml="http://morphml.org/morphml/schema" xsi:schemaLocation="http://morphml.org/neuroml/schema http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level3/NeuroML_Level3_v1.8.1.xsd">
+ <populations xmlns="http://morphml.org/networkml/schema">
+  <population cell_type="iaf psc alpha" name="l23e">
+   <pop_location>
+    <random_arrangement population_size="20683">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l23i">
+   <pop_location>
+    <random_arrangement population_size="5834">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l4e">
+   <pop_location>
+    <random_arrangement population_size="21915">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l4i">
+   <pop_location>
+    <random_arrangement population_size="5479">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l5e">
+   <pop_location>
+    <random_arrangement population_size="4850">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l5i">
+   <pop_location>
+    <random_arrangement population_size="1065">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l6e">
+   <pop_location>
+    <random_arrangement population_size="14395">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l6i">
+   <pop_location>
+    <random_arrangement population_size="2948">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="th">
+   <pop_location>
+    <random_arrangement population_size="902">
+     <rectangular_location>
+      <corner x="0" z="0" y="0"/>
+      <size depth="0" width="0" height="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+ </populations>
+ <projections xmlns="http://morphml.org/networkml/schema" units="Physiological Units">
+  <projection target="l6i" source="l4i" name="R:l4i-l6i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" source="l4i" name="R:l4i-l5i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" source="l4i" name="R:l4i-l5e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" source="l4i" name="R:l4i-l23e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" source="l4i" name="R:l4i-l23i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" source="l4i" name="R:l4i-l4e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" source="l4i" name="R:l4i-l4i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" source="l4e" name="R:l4e-l6i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" source="l4e" name="R:l4e-l6e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" source="l4e" name="R:l4e-l5i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" source="l4e" name="R:l4e-l5e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" source="l4e" name="R:l4e-l23e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" source="l4e" name="R:l4e-l23i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" source="l4e" name="R:l4e-l4e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" source="l4e" name="R:l4e-l4i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" source="l23i" name="R:l23i-l6i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" source="l23i" name="R:l23i-l6e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" source="l23i" name="R:l23i-l5i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" source="l23i" name="R:l23i-l5e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" source="l23i" name="R:l23i-l23e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" source="l23i" name="R:l23i-l23i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" source="l23i" name="R:l23i-l4e">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" source="l23i" name="R:l23i-l4i">
+   <synapse_props threshold="-20.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="35.000000" center="-351.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" source="l23e" name="R:l23e-l6i">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" source="l23e" name="R:l23e-l6e">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" source="l23e" name="R:l23e-l5i">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" source="l23e" name="R:l23e-l5e">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" source="l23e" name="R:l23e-l23e">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" source="l23e" name="R:l23e-l23i">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" source="l23e" name="R:l23e-l4e">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" source="l23e" name="R:l23e-l4i">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>
+     <GaussianDistribution deviation="8.000000" center="87.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution deviation="0.000000" center="1.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+ </projections>
+</neuroml>
+

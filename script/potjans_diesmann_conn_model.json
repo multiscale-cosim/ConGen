@@ -1,0 +1,447 @@
+{
+    "populations": [
+        {
+            "name": "l23e",
+            "size": 20683,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l23i",
+            "size": 5834,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l4e",
+            "size": 21915,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l4i",
+            "size": 5479,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l5e",
+            "size": 4850,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l5i",
+            "size": 1065,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l6e",
+            "size": 14395,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "l6i",
+            "size": 2948,
+            "neuronModel": "iaf_psc_alpha"
+        },
+        {
+            "name": "th",
+            "size": 902,
+            "neuronModel": "iaf_psc_alpha"
+        }
+    ],
+    "connections": [
+        {
+            "source": "l23e",
+            "target": "l23e",
+            "connectivityModel": "random",
+            "connectivity": 0.101
+        },
+        {
+            "source": "l23e",
+            "target": "l23i",
+            "connectivityModel": "random",
+            "connectivity": 0.135
+        },
+        {
+            "source": "l23e",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.008
+        },
+        {
+            "source": "l23e",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.069
+        },
+        {
+            "source": "l23e",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.1
+        },
+        {
+            "source": "l23e",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.055
+        },
+        {
+            "source": "l23e",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.016
+        },
+        {
+            "source": "l23e",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.036
+        },
+        {
+            "source": "l23i",
+            "target": "l23e",
+            "connectivityModel": "random",
+            "connectivity": 0.169
+        },
+        {
+            "source": "l23i",
+            "target": "l23i",
+            "connectivityModel": "random",
+            "connectivity": 0.137
+        },
+        {
+            "source": "l23i",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.006
+        },
+        {
+            "source": "l23i",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.003
+        },
+        {
+            "source": "l23i",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.062
+        },
+        {
+            "source": "l23i",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.027
+        },
+        {
+            "source": "l23i",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.007
+        },
+        {
+            "source": "l23i",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.001
+        },
+        {
+            "source": "l4e",
+            "target": "l23e",
+            "connectivityModel": "random",
+            "connectivity": 0.044
+        },
+        {
+            "source": "l4e",
+            "target": "l23i",
+            "connectivityModel": "random",
+            "connectivity": 0.032
+        },
+        {
+            "source": "l4e",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.05
+        },
+        {
+            "source": "l4e",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.079
+        },
+        {
+            "source": "l4e",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.051
+        },
+        {
+            "source": "l4e",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.026
+        },
+        {
+            "source": "l4e",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.021
+        },
+        {
+            "source": "l4e",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.003
+        },
+        {
+            "source": "l4i",
+            "target": "l23e",
+            "connectivityModel": "random",
+            "connectivity": 0.082
+        },
+        {
+            "source": "l4i",
+            "target": "l23i",
+            "connectivityModel": "random",
+            "connectivity": 0.052
+        },
+        {
+            "source": "l4i",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.135
+        },
+        {
+            "source": "l4i",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.16
+        },
+        {
+            "source": "l4i",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.006
+        },
+        {
+            "source": "l4i",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.002
+        },
+        {
+            "source": "l4i",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.017
+        },
+        {
+            "source": "l4i",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.001
+        },
+        {
+            "source": "l5e",
+            "target": "l23e",
+            "connectivityModel": "random",
+            "connectivity": 0.032
+        },
+        {
+            "source": "l5e",
+            "target": "l23i",
+            "connectivityModel": "random",
+            "connectivity": 0.075
+        },
+        {
+            "source": "l5e",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.007
+        },
+        {
+            "source": "l5e",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.003
+        },
+        {
+            "source": "l5e",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.083
+        },
+        {
+            "source": "l5e",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.06
+        },
+        {
+            "source": "l5e",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.057
+        },
+        {
+            "source": "l5e",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.028
+        },
+        {
+            "source": "l5i",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.0003
+        },
+        {
+            "source": "l5i",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.373
+        },
+        {
+            "source": "l5i",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.316
+        },
+        {
+            "source": "l5i",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.02
+        },
+        {
+            "source": "l5i",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.008
+        },
+        {
+            "source": "l6e",
+            "target": "l23e",
+            "connectivityModel": "random",
+            "connectivity": 0.008
+        },
+        {
+            "source": "l6e",
+            "target": "l23i",
+            "connectivityModel": "random",
+            "connectivity": 0.004
+        },
+        {
+            "source": "l6e",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.045
+        },
+        {
+            "source": "l6e",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.106
+        },
+        {
+            "source": "l6e",
+            "target": "l5e",
+            "connectivityModel": "random",
+            "connectivity": 0.02
+        },
+        {
+            "source": "l6e",
+            "target": "l5i",
+            "connectivityModel": "random",
+            "connectivity": 0.009
+        },
+        {
+            "source": "l6e",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.04
+        },
+        {
+            "source": "l6e",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.066
+        },
+        {
+            "source": "l6i",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.225
+        },
+        {
+            "source": "l6i",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.144
+        },
+        {
+            "source": "th",
+            "target": "l4e",
+            "connectivityModel": "random",
+            "connectivity": 0.0983
+        },
+        {
+            "source": "th",
+            "target": "l4i",
+            "connectivityModel": "random",
+            "connectivity": 0.0619
+        },
+        {
+            "source": "th",
+            "target": "l6e",
+            "connectivityModel": "random",
+            "connectivity": 0.0512
+        },
+        {
+            "source": "th",
+            "target": "l6i",
+            "connectivityModel": "random",
+            "connectivity": 0.0196
+        }
+    ],
+    "inputs": [
+        {
+            "inputType": "poisson",
+            "target": "l23e",
+            "n": 1600
+        },
+        {
+            "inputType": "poisson",
+            "target": "l23i",
+            "n": 1500
+        },
+        {
+            "inputType": "poisson",
+            "target": "l4e",
+            "n": 2100
+        },
+        {
+            "inputType": "poisson",
+            "target": "l4i",
+            "n": 1900
+        },
+        {
+            "inputType": "poisson",
+            "target": "l5e",
+            "n": 2000
+        },
+        {
+            "inputType": "poisson",
+            "target": "l5i",
+            "n": 1900
+        },
+        {
+            "inputType": "poisson",
+            "target": "l6e",
+            "n": 2900
+        },
+        {
+            "inputType": "poisson",
+            "target": "l6i",
+            "n": 2100
+        }
+    ]
+}

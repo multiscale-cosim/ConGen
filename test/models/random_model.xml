@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<neuroml xmlns="http://morphml.org/neuroml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:net="http://morphml.org/networkml/schema" xmlns:mml="http://morphml.org/morphml/schema" xmlns:meta="http://morphml.org/metadata/schema" xmlns:bio="http://morphml.org/biophysics/schema" xmlns:cml="http://morphml.org/channelml/schema" xsi:schemaLocation="http://morphml.org/neuroml/schema http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level3/NeuroML_Level3_v1.8.1.xsd" length_units="micrometer">
+
+    <populations xmlns="http://morphml.org/networkml/schema">
+        <population name="PopA" cell_type="iaf_psc_alpha">
+            <pop_location>
+                <random_arrangement population_size="200">
+                    <rectangular_location>
+                        <corner x="0" y="0" z="0"/>
+                        <size width="0" height="0" depth="0"/>
+                    </rectangular_location>
+                </random_arrangement>
+            </pop_location>
+        </population>
+        <population name="PopB" cell_type="iaf_psc_alpha">
+            <pop_location>
+                <random_arrangement population_size="300">
+                    <rectangular_location>
+                        <corner x="0" y="0" z="0"/>
+                        <size width="0" height="0" depth="0"/>
+                    </rectangular_location>
+                </random_arrangement>
+            </pop_location>
+        </population>
+    </populations>
+
+
+    <projections units="Physiological Units" xmlns="http://morphml.org/networkml/schema">
+
+        <projection name="PopA-PopB" source="PopA" target="PopB">
+            <synapse_props synapse_type="StaticSynapse" threshold="-20">
+                <weight> 2.0 </weight>
+                <internal_delay> 0.5 </internal_delay>
+            </synapse_props>
+            <connectivity_pattern>
+                <fixed_probability probability="0.1"/>
+            </connectivity_pattern>
+        </projection>
+
+    </projections>
+
+</neuroml>

@@ -1,0 +1,1578 @@
+{
+  "domain": "congen",
+  "maximums": {
+    "maxWeight": "351",
+    "maxNbNeurons": "21915",
+    "maxSuperPopLevels": "1"
+  },
+  "layout": {
+    "LayoutType": 0,
+    "SceneEntities":[ 15, 14, 13, 12, 8, 9, 10, 11 ]
+  },
+  "entities": [
+    {
+      "EntityType": "NeuronSuperPop",
+      "RootEntity": "t",
+      "EntityGID": "7",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "CorticalMicrocircuitA"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "77169"
+            },
+            {
+              "label": "child depth",
+              "value": "1"
+            },
+            {
+              "label": "Nb of neurons Mean",
+              "value": "9646"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "8",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l23e"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "20683"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "9",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l23i"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "5834"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "10",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l4e"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "21915"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "11",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l4i"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "5479"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "12",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l5e"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "4850"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "13",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l5i"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "1065"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "14",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l6e"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "14395"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "15",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "l6i"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "2948"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronSuperPop",
+      "RootEntity": "t",
+      "EntityGID": "16",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "Thalamus"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "902"
+            },
+            {
+              "label": "child depth",
+              "value": "1"
+            },
+            {
+              "label": "Nb of neurons Mean",
+              "value": "902"
+            }
+          ]
+        }
+    },
+    {
+      "EntityType": "NeuronPop",
+      "RootEntity": "f",
+      "EntityGID": "17",
+      "EntityData":
+        {
+          "objectLabel": "",
+          "properties": [
+            {
+              "label": "Entity name",
+              "value": "th"
+            },
+            {
+              "label": "Nb of neurons",
+              "value": "902"
+            },
+            {
+              "label": "Neuron model",
+              "value": "iaf psc alpha"
+            },
+            {
+              "label": "child depth",
+              "value": "0"
+            }
+          ]
+        }    }
+  ],
+  "relationships": [
+      {
+      "relationType": "isParentOf",
+      "relations": [
+          {
+            "Source": "16",
+            "Dest": "17"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "15"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "14"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "13"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "12"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "8"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "9"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "10"
+
+          },
+          {
+            "Source": "7",
+            "Dest": "11"
+            }
+          ]
+
+    },
+      {
+      "relationType": "connectsTo",
+      "relations": [
+          {
+            "Source": "9",
+            "Dest": "15",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l6i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "14",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l6e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "13",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l5i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "12",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l5e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "8",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l23e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "9",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l23i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "10",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l4e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "9",
+            "Dest": "11",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23i-l4i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "-351"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "35"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "-20"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "15",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l6i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "14",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l6e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "13",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l5i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "12",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l5e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "8",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l23e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "9",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l23i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "10",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l4e"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+
+          },
+          {
+            "Source": "8",
+            "Dest": "11",
+            "RelationData":
+            {
+              "objectLabel": "",
+              "properties": [
+                {
+                  "label": "Name",
+                  "value": "R:l23e-l4i"
+                },
+                {
+                  "label": "Connectivity Model",
+                  "value": "Random"
+                },
+                {
+                  "label": "Random probability",
+                  "value": "0"
+                },
+                {
+                  "label": "FanOut Outdegree",
+                  "value": "0"
+                },
+                {
+                  "label": "FanIn Indegree",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Probability",
+                  "value": "0"
+                },
+                {
+                  "label": "Spatial Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Weight",
+                  "value": "0"
+                },
+                {
+                  "label": "Weight Gaussian Mean",
+                  "value": "87"
+                },
+                {
+                  "label": "Weight Gaussian Sigma",
+                  "value": "8"
+                },
+                {
+                  "label": "Delay Type",
+                  "value": "Gaussian"
+                },
+                {
+                  "label": "Delay",
+                  "value": "0"
+                },
+                {
+                  "label": "Delay Gaussian Mean",
+                  "value": "1"
+                },
+                {
+                  "label": "Delay Gaussian Sigma",
+                  "value": "0"
+                },
+                {
+                  "label": "Threshold",
+                  "value": "0"
+                }
+              ]
+            }
+            }
+          ]
+
+    },
+      {
+      "relationType": "aggregatedConnectsTo",
+      "relations": [
+          ]
+
+    },
+      {
+      "relationType": "aggregatedConnectedBy",
+      "relations": [
+          ]
+    }
+  ]
+}
