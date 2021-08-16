@@ -12,8 +12,12 @@ def parse_arguments():
     parser.add_argument('-o', '--outfile', type=argparse.FileType('w'), nargs="?", default=sys.stdout,
                         help="File to write output to")
     parser.add_argument('-t', '--simulate', type=float, default=0, metavar="SIMTIME",
-                        help="Simulate the model for a given amount of milliseconds using NEST")
-    parser.add_argument('-m', '--multiscale', type=string, default="",
+                        help="Simulate the model for a given amount of milliseconds")
+    parser.add_argument('-n', '--nest', type=bool, default=False, metavar="use_nest",
+                        help="Use Nest")
+    parser.add_argument('-b', '--tvb', type=bool, default=False, metavar="use_tvb",
+                        help="Use Nest")
+    parser.add_argument('-m', '--multiscale', type=bool, default=False, metavar="use_multiscale",
                         help="Generate a multiscale simulation")
     parser.add_argument('-c', '--write-connections', action='store_true',
                         help="Instead of simulating the network, parse the connections and write them to output")

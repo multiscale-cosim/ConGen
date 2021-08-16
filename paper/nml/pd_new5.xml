@@ -155,7 +155,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l6e" source="l6e_input" name="R:l6e_input-l6e">
@@ -168,7 +168,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l5i" source="l5i_input" name="R:l5i_input-l5i">
@@ -181,7 +181,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l5e" source="l5e_input" name="R:l5e_input-l5e">
@@ -194,7 +194,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l4i" source="l4i_input" name="R:l4i_input-l4i">
@@ -207,7 +207,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l4e" source="l4e_input" name="R:l4e_input-l4e">
@@ -220,7 +220,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l6i" source="l4i" name="R:l4i-l6i">
@@ -636,7 +636,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
   <projection target="l6i" source="l5e" name="R:l5e-l6i">
@@ -948,7 +948,7 @@
     </internal_delay>
    </synapse_props>
    <connectivity_pattern>
-    <All-to-all/>
+    <all_to_all/>
    </connectivity_pattern>
   </projection>
  </projections>
