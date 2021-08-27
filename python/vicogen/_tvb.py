@@ -100,3 +100,6 @@ def tvb_build_model(network_model, options=None):
     return tvb_model
 
 
+def build_tvb_file(model, options)(network_model, options=None):
+
+

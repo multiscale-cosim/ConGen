@@ -2,6 +2,7 @@ from _misc import neuroml_namespace as neuroNS
 from projections import *
 from populations import *
 from inputs import *
+from outputs import *
 from model import *
 from synapses import *
 from distributions import *
@@ -19,10 +20,12 @@ def parse_model(model_xml):
     populations_xml = model_xml.find("net:populations", neuroNS)
     projections_xml = model_xml.find("net:projections", neuroNS)
     inputs_xml = model_xml.find("nml:inputs", neuroNS)
+    outputs_xml = model_xml.find("nml:outputs", neuroNS)
 
     populations = []
     if populations_xml is not None:
         for population_xml in populations_xml.getchildren():
+            print(population_xml.tag, population_xml.attrib)
             pop = parse_population(population_xml)
             populations.append(pop)
 
@@ -37,6 +40,12 @@ def parse_model(model_xml):
         for input_xml in inputs_xml.getchildren():
             input_ = parse_input(input_xml)
             inputs.append(input_)
+
+    outputs = []
+    if outputs_xml is not None:
+        for output_xml in outputs_xml.getchildren():
+            output_ = parse_output(output_xml)
+            outputs.append(output_)
 
     return NetworkModel(populations, projections, inputs)
 
@@ -324,3 +333,20 @@ def parse_input(input_xml):
         return PoissonInput(name, frequency)
 
     raise NetworkMLParsingError(input_xml, "Unsupported Input Type")
+
+def parse_output(output_xml):
+    """
+    Parses Element with XML tag 'output'
+    :param output_xml:
+    :type output_xml: xml.etree.ElementTree.Element
+    :return: Parsed output
+    :rtype: Output
+    """
+
+    name = output_xml.attrib['name']
+
+    output_m_xml = output_xml.find("nml:monitor", neuroNS)
+    if output_m_xml is not None:
+        return Monitor(name)
+
+    raise NetworkMLParsingError(output_xml, "Unsupported Output Type")

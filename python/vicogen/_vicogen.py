@@ -49,7 +49,7 @@ def build_nest_model(model, options=None):
 
 def build_tvb_model(model, options=None):
     """
-    Build a model in TVB
+    Build the multiscale TVB model
 
     :param model:
     :type model: neuroml.NetworkModel
@@ -59,18 +59,41 @@ def build_tvb_model(model, options=None):
 
     return _tvb.tvb_build_model(model, options)
 
-def build_translator(model, options=None):
+def build_nest_multiscale_file(model, options=None):
     """
-    Build a translator
+    Build a multiscale file in NEST
 
     :param model:
     :type model: neuroml.NetworkModel
-    :return: The built translator model
+    :return:
+    """
+    from . import _nest
+
+    return _nest.nest_build_model(model, options)
+
+def build_tvb_multiscale_file(model, options=None):
+    """
+    Build the multiscale TVB file
+
+    :param model:
+    :type model: neuroml.NetworkModel
+    :return: 
+    """
+    from . import _tvb
+
+    return _tvb.tvb_build_model(model, options)
+
+def build_translator_multiscale_file(model, options=None):
+    """
+    Build a translator files
+
+    :param model:
+    :type model: neuroml.NetworkModel
+    :return: 
     """
     from . import _translator
 
-    return _translator.translator_build_model(model, options)
-
+    return _translator.translator_build_multiscale_file(model, options)
 
 def simulate_nest_model(model, sim_time=100.0, options=None):
     """
@@ -98,14 +121,14 @@ def simulate_tvb_model(model, sim_time=100.0, options=None):
     """
     from . import _tvb
 
-    if isinstance(model, _tvb.NestModel):
+    if isinstance(model, _tvb.TVBModel):
         tvb_model = model
     else:
         tvb_model = build_tvb_model(model, options)
 
     _tvb.tvb_simulate_model(tvb_model, {'sim_time': sim_time})
 
-def simulate_multiscale(model, sim_time=100.0, options=None):
+def multiscale(model, sim_time=100.0, options=None):
     """
     Simulates a multiscale model. Calls build_nest_model(), build_translator_model(), build_tvb_model() with the NetworkModel object.
     :param model: The model to simulate
@@ -118,26 +141,22 @@ def simulate_multiscale(model, sim_time=100.0, options=None):
     from . import _nest_to_tvb
 
 
-    tvb_model = build_tvb_model(model, options)
+    tvb_model = build_tvb_file(model, options)
+    
 
-    _tvb.tvb_simulate_model(tvb_model, {'sim_time': sim_time})
 
 def handle_arguments(args):
     logging.basicConfig(level=args.loglevel)
 
     model = neuroml.read_xml(args.modelfile)
-    print(args.simulate)
     if args.write_connections:
         # If -c or --write-connections is active, only print connectivity and return
         print_connections(model, args.outfile)
         return
     elif args.simulate:
         if args.multiscale:
-            simulate_multiscale(model, args.simulate, {})
+            multiscale(model, args.simulate, {})
 
         elif args.nest:
             simulate_nest_model(model, args.simulate, {})
- 
-        elif args.tvb:
-            simulate_tvb_model(model, args.simulate, {})
 

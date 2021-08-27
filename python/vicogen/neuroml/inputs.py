@@ -17,3 +17,12 @@ class PoissonInput(Input):
     def __init__(self, name, rate):
         Input.__init__(self, name)
         self.rate = rate
+
+class SpikeToRateTranslator(Input):
+    def __init__(self, name):
+        Input.__init__(self, name)
+
+class RateToSpikeTranslator(Input):
+    def __init__(self, name):
+        Input.__init__(self, name)
+

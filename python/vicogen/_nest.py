@@ -1,7 +1,8 @@
 import nest
 import numpy
 
-from . import neuroml
+import neuroml
+#from neuroml import inputs
 import logging
 
 
@@ -31,8 +32,8 @@ def nest_build_model(network_model, options=None):
     logging.info("Building NEST Input Generators")
     for input_ in network_model.inputs:
         nest_model.inputs[input_.name] = nest_build_input(input_)
-
-    logging.info("Connecting NEST Populations")
+    print(nest_model.inputs)
+    logging.info("Connecting NEST Projections")
     for projection in network_model.projections:
         nest_build_projection(projection, nest_model)
 
@@ -52,8 +53,8 @@ def nest_build_projection(projection, nest_model):
     source_ids = nest_model.populations.get(projection.source_identifier) or nest_model.inputs.get(projection.source_identifier)
     target_ids = nest_model.populations[projection.target_identifier]
     cset = projection.cset()  # TODO: handle other connections
-    nest.CGConnect(source_ids, target_ids, cset,
-                   {'weight': 0, 'delay': 1})  # Nest needs to know what the value sets mean, so we give it the indices of of our ValueSets
+    nest.CGConnect(source_ids, target_ids, cset, {'weight': 0, 'delay': 1}, model='static_synapse')
+    #nest.Connect(source_ids, target_ids, {"rule": "conngen", "cg": cset, "params_map": {'weight': 0, 'delay': 1}})
 
 
 def nest_build_population(population):
@@ -71,9 +72,12 @@ def nest_build_population(population):
 
 
 def nest_build_input(input):
-    if isinstance(input, neuroml.inputs.PoissonInput):
+    if "PoissonInput" in type(input).__name__:
         return nest.Create('poisson_generator', params={'rate': input.rate})
-
+    elif "SpikeToRate" in type(input).__name__:
+        return nest.Create('spike_detector')
+    elif "RateToSpike" in type(input).__name__:
+        return nest.Create('hom_poisson_generator')
 
 def nest_simulate_model(nest_model, options):
     logging.info("Starting NEST simulation")
