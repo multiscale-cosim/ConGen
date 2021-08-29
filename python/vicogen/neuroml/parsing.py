@@ -7,8 +7,10 @@ from model import *
 from synapses import *
 from distributions import *
 from _misc import NetworkMLParsingError
+import logging
 
-
+logging.basicConfig(filename='/home/sandra/Documents/ViCoGen/ConGen/python/test.log', encoding='utf-8', level=logging.DEBUG)
+    
 def parse_model(model_xml):
     """
 
@@ -20,12 +22,12 @@ def parse_model(model_xml):
     populations_xml = model_xml.find("net:populations", neuroNS)
     projections_xml = model_xml.find("net:projections", neuroNS)
     inputs_xml = model_xml.find("nml:inputs", neuroNS)
+    
     outputs_xml = model_xml.find("nml:outputs", neuroNS)
 
     populations = []
     if populations_xml is not None:
         for population_xml in populations_xml.getchildren():
-            print(population_xml.tag, population_xml.attrib)
             pop = parse_population(population_xml)
             populations.append(pop)
 
@@ -47,12 +49,58 @@ def parse_model(model_xml):
             output_ = parse_output(output_xml)
             outputs.append(output_)
 
-    return NetworkModel(populations, projections, inputs)
+    return NetworkModel(populations, projections, inputs, outputs)
 
+def parse_model_multiscale(model_xml, labels):
+    """
+    :param model_xml: The xml element containing the whole model
+    :type model_xml: xml.etree.ElementTree.Element
+    :return: The parsed network model data structures for multiscale
+    :rtype: dictionary with NetworkModel objects
+    """
+    models = {}
+
+    populations_xml = model_xml.find("net:populations", neuroNS)
+    projections_xml = model_xml.find("net:projections", neuroNS)
+    inputs_xml = model_xml.find("net:inputs", neuroNS)
+    outputs_xml = model_xml.find("nml:outputs", neuroNS)
+    print("Populations", populations_xml)
+    print("Projections", projections_xml)
+    print("Inputs", inputs_xml)
+    print("Outputs", outputs_xml)
+
+    for key, val in labels.items():
+        populations = []
+        if populations_xml is not None:
+            for population_xml in populations_xml.getchildren():
+                pop = parse_population(population_xml, val)
+                if pop:
+                    populations.append(pop)
+
+        projections = []
+        if projections_xml is not None:
+            for projection_xml in projections_xml.getchildren():
+                proj = parse_projection(projection_xml, val)
+                if proj:
+                    projections.append(proj)
+
+        inputs = []
+        if inputs_xml is not None:
+            for input_xml in inputs_xml.getchildren():
+                input_ = parse_input(input_xml)
+                inputs.append(input_)
+
+        outputs = []
+        if outputs_xml is not None:
+            for output_xml in outputs_xml.getchildren():
+                output_ = parse_output(output_xml)
+                outputs.append(output_)
+        models[key] = NetworkModel(populations, projections, inputs, outputs)
+
+    return models
 
 # --- Projection parsing ---
-
-def parse_projection(projection_xml):
+def parse_projection(projection_xml, label=""):
     """
     Parses Element with XML tag 'projection'
 
@@ -62,6 +110,8 @@ def parse_projection(projection_xml):
     name = projection_xml.attrib["name"]
     source_name = projection_xml.attrib["source"]
     target_name = projection_xml.attrib["target"]
+    if not label in source_name or label in target_name:
+        return
 
     # Get synapse properties
     synprops_xml = projection_xml.find("net:synapse_props", neuroNS)
@@ -120,9 +170,17 @@ def parse_connectivity_pattern(connection_xml, name, source_name, target_name, s
         return FixedProbability(p, name, source_name, target_name, synprops)
 
     # one_to_one
-    pattern = connection_xml.find("net:one_to_one", neuroNS)  # Not actually in NeuroML
+    pattern = connection_xml.find("cg:one_to_one", neuroNS)  # Not actually in NeuroML
+    print("One to One:",pattern)
     if pattern is not None:
         return OneToOne(name, source_name, target_name, synprops)
+
+    # atlas_based
+    pattern = connection_xml.find("cg:atlas_based", neuroNS)  # Not actually in NeuroML
+    print("Atlas:",pattern)
+    if pattern is not None:
+        return AtlasBased(name, source_name, target_name, synprops)
+
 
     # per_cell
     pattern = connection_xml.find("net:per_cell_connection", neuroNS)
@@ -210,13 +268,16 @@ def parse_distribution(distribution_xml):
 
 # --- Population Parsing ---
 
-def parse_population(population_xml):
+def parse_population(population_xml, tag=''):
     """
     Parses Element with XML tag 'population'
 
     :type population_xml: xml.etree.ElementTree.Element
     :rtype: Population"""
     name = population_xml.attrib['name']
+
+    if not tag in name:
+        return
     cell_type = population_xml.attrib['cell_type']
     instances_xml = population_xml.find('net:instances', neuroNS)
     template_xml = population_xml.find('net:pop_location', neuroNS)
@@ -326,11 +387,15 @@ def parse_input(input_xml):
     """
 
     name = input_xml.attrib['name']
-
     poisson_input_xml = input_xml.find("nml:random_stim", neuroNS)
     if poisson_input_xml is not None:
         frequency = float(poisson_input_xml.attrib['frequency'])
         return PoissonInput(name, frequency)
+    if "spike_to_rate" in name:
+        return SpikeToRate(name)
+    if "rate_to_spike" in name:
+        return RateToSpike(name)
+    
 
     raise NetworkMLParsingError(input_xml, "Unsupported Input Type")
 

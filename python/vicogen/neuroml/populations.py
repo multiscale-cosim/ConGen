@@ -49,7 +49,6 @@ class PopulationTemplateRandom(PopulationTemplate):
         :type bounds: RectangularBounds|SphericalBounds
         """
         PopulationTemplate.__init__(self, name, n_neurons, cell_type)
-        print(name, n_neurons, cell_type)
         self.bounds = bounds
         self.neuron_positions = csa.random2d(n_neurons, bounds.w, bounds.h)
 

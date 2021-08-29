@@ -1,5 +1,5 @@
 
-class output:
+class Output:
     def __init__(self, name):
         self.name = name
 
@@ -7,6 +7,10 @@ class output:
         return 1
 
 
-class Monitor(Output):
+class Multimeter(Output):
+    def __init__(self, name):
+        Output.__init__(self, name)
+
+class SpikeDetector(Output):
     def __init__(self, name):
         Output.__init__(self, name)

@@ -1,5 +1,6 @@
 from .model import NetworkModel
 from ._neuroml import read_xml
+from ._neuroml import read_xml_multiscale
 from ._neuroml import get_connections
 from ._neuroml import get_connectivity_matrix
 

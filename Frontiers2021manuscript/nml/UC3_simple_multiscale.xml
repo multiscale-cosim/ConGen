@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<neuroml xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://github.com/NeuroML/NeuroML2/blob/master/Schemas/NeuroML2/NeuroML_v2.1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.neuroml.org/schema/neuroml2" length_units="micrometer">
+ <populations xmlns="http://morphml.org/networkml/schema">
+  <population name="Brain_region__0" cell_type="nmm_kuramoto">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population name="Brain_region__1" cell_type="proxy">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population name="pop23excitatory1" cell_type="iaf psc alpha">
+   <pop_location>
+    <random_arrangement population_size="800">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population name="pop23inhibitory1" cell_type="iaf psc alpha">
+   <pop_location>
+    <random_arrangement population_size="200">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+ </populations>
+ <projections units="Physiological Units" xmlns="http://morphml.org/networkml/schema">
+  <projection target="Brain_region__1" source="NEST_to_TVB" name="R:NEST_to_TVB-Brain_region__1">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <one_to_one/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="TVB_to_NEST" source="Brain_region__1" name="R:Brain_region__1-TVB_to_NEST">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="Brain_region__0" source="Brain_region__1" name="R:Brain_region__1-Brain_region__0">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <one_to_one/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="pop23inhibitory1" source="pop23excitatory1" name="R:pop23excitatory1-pop23inhibitory1">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>83.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="NEST_to_TVB" source="pop23excitatory1" name="R:excitatory1-NEST_to_TVB">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="pop23excitatory1" source="TVB_to_NEST" name="R:TVB_to_NEST-pop23excitatory1">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="pop23excitatory1" source="pop23inhibitory1" name="R:pop23inhibitory1-pop23excitatory1">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>-350.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="Brain_region__1" source="Brain_region__0" name="R:Brain_region__0-Brain_region__1">
+   <synapse_props threshold="0.000000" synapse_type="StaticSynapse">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <one_to_one/>
+   </connectivity_pattern>
+  </projection>
+ </projections>
+ <inputs>
+  <input name="NEST_to_TVB_spike_to_rate">
+   <random_stim frequency="1" synaptic_mechanism="undefined"/>
+   <target population="Brain_region__1">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="TVB_to_NEST_rate_to_spike">
+   <random_stim frequency="1" synaptic_mechanism="undefined"/>
+   <target population="pop23excitatory1">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+ </inputs>
+</neuroml>
+

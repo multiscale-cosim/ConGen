@@ -43,19 +43,24 @@ def create_logger(path,name, log_level):
 
 
 class TTNTranslatorModel:
-    def __init__(self, a1, a3, a4, network_model):
+    def __init__(self, a1, a4, network_model):
 
     	############ Step 1: all argument parsing stuff
     	self.path_config = a1
+        count_trans = 0
+        tvb_to_nest = 100000
     	for input_ in network_model.inputs:
-        	if input_.name == "RateToSpike_":
-            	tvb_to_nest = input_.id
+            if input_.name == "RateToSpike_":
+                if tvb_to_nest > int(input_.id):
+                    tvb_to_nest = int(input_.id)
+                count_trans = count_trans+1
+                tvb_to_nest = input_.id
     	if not tvb_to_nest:
-        	logging.error("No translator defined")
-        	sys.exit(1)
+            logging.error("No translator defined")
+            sys.exit(1)
     	
-    	self.id_first_spike_detector = int(tvb_to_nest)
-    	self.nb_spike_generator = int(a3)
+    	self.id_first_spike_detector = tvb_to_nest
+    	self.nb_spike_generator = count_trans
     	self.TVB_config = a4
     	# take the parameters and instantiate objects for analysing data
     	with open(path_config+'/../../parameter.json') as f:

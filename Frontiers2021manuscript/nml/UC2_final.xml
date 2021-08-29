@@ -1,0 +1,1805 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<neuroml xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://github.com/NeuroML/NeuroML2/blob/master/Schemas/NeuroML2/NeuroML_v2.1.xsd" xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" length_units="micrometer">
+ <populations xmlns="http://morphml.org/networkml/schema">
+  <population cell_type="iaf psc alpha" name="l23e">
+   <pop_location>
+    <random_arrangement population_size="20683">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l23i">
+   <pop_location>
+    <random_arrangement population_size="5834">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l4e">
+   <pop_location>
+    <random_arrangement population_size="21915">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l4i">
+   <pop_location>
+    <random_arrangement population_size="5479">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l5e">
+   <pop_location>
+    <random_arrangement population_size="4850">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l5i">
+   <pop_location>
+    <random_arrangement population_size="1065">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l6e">
+   <pop_location>
+    <random_arrangement population_size="14395">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="l6i">
+   <pop_location>
+    <random_arrangement population_size="2948">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="iaf psc alpha" name="th">
+   <pop_location>
+    <random_arrangement population_size="902">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__0">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__1">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__2">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__3">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__4">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__5">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__6">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__7">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__8">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__9">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__10">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__11">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__12">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__13">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__14">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__15">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__16">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__17">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__18">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__19">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__20">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__21">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__22">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__23">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__24">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__25">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="proxy" name="Brain_region__26">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__27">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__28">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__29">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__30">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__31">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__32">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__33">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__34">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__35">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__36">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__37">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__38">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__39">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__40">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__41">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__42">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__43">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__44">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__45">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__46">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__47">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__48">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__49">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__50">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__51">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__52">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__53">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__54">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__55">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__56">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__57">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__58">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__59">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__60">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__61">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__62">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__63">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__64">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__65">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__66">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+  <population cell_type="nmm_kuramoto" name="Brain_region__67">
+   <pop_location>
+    <random_arrangement population_size="1">
+     <rectangular_location>
+      <corner y="0" z="0" x="0"/>
+      <size height="0" depth="0" width="0"/>
+     </rectangular_location>
+    </random_arrangement>
+   </pop_location>
+  </population>
+ </populations>
+ <projections xmlns="http://morphml.org/networkml/schema" units="Physiological Units">
+  <projection target="RateToSpike_" name="R:Brain_region__26-RateToSpike_" source="Brain_region__26">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <one_to_one/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l23i-l5e" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l23i-l5i" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l23i-l6e" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l23i-l6i" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l23i-l4i" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l23i-l4e" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l23i-l23i" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l23i-l23e" source="l23i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l4e_input-l4e" source="l4e_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l4e-l5e" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l4e-l5i" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l4e-l6e" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l4e-l6i" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l4e-l4i" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l4e-l4e" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l4e-l23i" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l4e-l23e" source="l4e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l4i_input-l4i" source="l4i_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l4i-l5e" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l4i-l23e" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l4i-l5i" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l4i-l4i" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l4i-l4e" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l4i-l6i" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l4i-l23i" source="l4i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l5e_input-l5e" source="l5e_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:th-l6e" source="th">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:th-l6i" source="th">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:th-l4e" source="th">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:th-l4i" source="th">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l6i_input-l6i" source="l6i_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l6e_input-l6e" source="l6e_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l5i_input-l5i" source="l5i_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l23e_input-l23e" source="l23e_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:RateToSpike_-l4e" source="RateToSpike_">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>87.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:RateToSpike_-l6i" source="RateToSpike_">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>87.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:RateToSpike_-l4i" source="RateToSpike_">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>87.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:RateToSpike_-l6e" source="RateToSpike_">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>87.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="Brain_region__0" name="R:Brain_region__67-Brain_region__0" source="Brain_region__67">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>0.000000</weight>
+    <internal_delay>0.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <atlas_based connectivity_matrix="connectivity_68.zip"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l23i_input-l23i" source="l23i_input">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <all_to_all/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l23e-l5e" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l23e-l5i" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l23e-l6e" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l23e-l6i" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l23e-l4i" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l23e-l4e" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l23e-l23i" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l23e-l23e" source="l23e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="Brain_region__26" name="R:SpikeToRate_-Brain_region__26" source="SpikeToRate_">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>1.000000</weight>
+    <internal_delay>0.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <one_to_one/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l6i-l6i" source="l6i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l6i-l6e" source="l6i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l6e-l5e" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l6e-l5i" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l6e-l6e" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l6e-l6i" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l6e-l4i" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l6e-l4e" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l6e-l23i" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l6e-l23e" source="l6e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l5i-l5i" source="l5i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l5i-l6e" source="l5i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l5i-l6i" source="l5i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l5i-l4e" source="l5i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l5i-l5e" source="l5i">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="-351.000000" deviation="35.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="0.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5e" name="R:l5e-l5e" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l5i" name="R:l5e-l5i" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6e" name="R:l5e-l6e" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="SpikeToRate_" name="R:l5e-SpikeToRate_" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>1.000000</weight>
+    <internal_delay>1.000000</internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <one_to_one/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l6i" name="R:l5e-l6i" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4i" name="R:l5e-l4i" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="0.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l4e" name="R:l5e-l4e" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23i" name="R:l5e-l23i" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+  <projection target="l23e" name="R:l5e-l23e" source="l5e">
+   <synapse_props synapse_type="StaticSynapse" threshold="-20.000000">
+    <weight>
+     <GaussianDistribution center="87.000000" deviation="8.000000"/>
+    </weight>
+    <internal_delay>
+     <GaussianDistribution center="1.000000" deviation="0.000000"/>
+    </internal_delay>
+   </synapse_props>
+   <connectivity_pattern>
+    <fixed_probability probability="0.000000"/>
+   </connectivity_pattern>
+  </projection>
+ </projections>
+ <inputs units="SI Units">
+  <input name="l23e_input">
+   <random_stim frequency="12800" synaptic_mechanism="undefined"/>
+   <target population="l23e">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l23i_input">
+   <random_stim frequency="12000" synaptic_mechanism="undefined"/>
+   <target population="l23i">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l4e_input">
+   <random_stim frequency="16800" synaptic_mechanism="undefined"/>
+   <target population="l4e">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l4i_input">
+   <random_stim frequency="15200" synaptic_mechanism="undefined"/>
+   <target population="l4i">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l5e_input">
+   <random_stim frequency="16000" synaptic_mechanism="undefined"/>
+   <target population="l5e">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l5i_input">
+   <random_stim frequency="15200" synaptic_mechanism="undefined"/>
+   <target population="l5i">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l6e_input">
+   <random_stim frequency="23200" synaptic_mechanism="undefined"/>
+   <target population="l6e">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="l6i_input">
+   <random_stim frequency="16800" synaptic_mechanism="undefined"/>
+   <target population="l6i">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="SpikeToRate_">
+   <pulse_input duration="0" delay="0" amplitude="0"/>
+   <target population="Brain_region__26">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+  <input name="RateToSpike_">
+   <random_stim frequency="0" synaptic_mechanism="undefined"/>
+   <target population="l4e">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+   <target population="l6i">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+   <target population="l4i">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+   <target population="l6e">
+    <sites size="1">
+     <site cell_id="0"/>
+    </sites>
+   </target>
+  </input>
+ </inputs>
+</neuroml>
+

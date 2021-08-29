@@ -124,6 +124,11 @@ class OneToOne(ConnectivityPattern):  # Not actually in NeuroML
         ConnectivityPattern.__init__(self, name, source, target, synprops)
         self._mask = csa.oneToOne
 
+class AtlasBased(ConnectivityPattern):
+    def __init__(self, name, source, target, synprops):
+        ConnectivityPattern.__init__(self, name, source, target, synprops)
+        self._mask = synprops['Connectivity Matrix']
+
 
 class FixedProbability(ConnectivityPattern):
     def __init__(self, probability, name, source, target, synprops):

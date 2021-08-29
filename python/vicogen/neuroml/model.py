@@ -10,8 +10,9 @@ class NetworkModel:
     :param projections:
      :type projections: list[Projection]
     :param inputs:
+    :param outputs:
     """
-    def __init__(self, populations, projections, inputs):
+    def __init__(self, populations, projections, inputs, outputs):
         """
 
         :param populations:
@@ -23,9 +24,11 @@ class NetworkModel:
         self.populations = populations
         self.projections = projections
         self.inputs = inputs
+        self.outputs = outputs
 
         self.populations_dict = {}
         self.inputs_dict = {}
+        self.outputs_dict = {}
 
         self.rebuild_populations_dict()
         self.rebuild_inputs_dict()
@@ -45,4 +48,7 @@ class NetworkModel:
 
     def rebuild_inputs_dict(self):
         self.inputs_dict = dict((input_.name, input_) for input_ in self.inputs)
+
+    def rebuild_outputs_dict(self):
+        self.outputs_dict = dict((output_.name, output_) for output_ in self.outputs)
 

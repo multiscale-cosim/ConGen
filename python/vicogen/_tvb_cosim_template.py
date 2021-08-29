@@ -26,7 +26,7 @@ def tvb_model (dt,weigth,delay,id_proxy):
     """
     region_label = np.repeat(['real'],len(weigth)) # name of region fixed can be modify for parameter of function
     region_label[id_proxy]='proxy'
-    populations=lab.models.ReducedWongWang()
+    populations=$model
     white_matter = lab.connectivity.Connectivity(region_labels=region_label,
                                                  weights=weigth,
                                                  speed=np.array(1.0),
@@ -92,8 +92,8 @@ class tvb_sim:
         :param resolution_record: the resolution of the monitor
         :param initial_condition: initial condition for S and H
         """
-        self.nb_node = weight.shape[0]-len(id_proxy)
-        model = tvb_model(resolution_simulation,weight,delay,id_proxy)
+        self.nb_node = weight.shape[0]-len($id_proxy)
+        model = tvb_model(resolution_simulation,weight,delay,$id_proxy)
         self.sim = tvb_init(model,time_synchronize,initial_condition)
 
     def __call__(self,time,proxy_data=None):

@@ -18,6 +18,19 @@ def read_xml(xmlfile):
     root = et.getroot()
     return parsing.parse_model(root)
 
+def read_xml_multiscale(xmlfile, labels):
+    """ Reads and parses an xml file and returns a data structure
+    which is useful for a multiscale simulation.
+
+    :param xmlfile: The xml file to parse
+    :type xmlfile: file
+    :return: The network model data structure
+    :rtype: NetworkModel
+    """
+    et = ET.parse(xmlfile)
+    root = et.getroot()
+    return parsing.parse_model_multiscale(root, labels)
+
 
 def get_connections(projection):
     """
@@ -27,9 +40,6 @@ def get_connections(projection):
     :return: A list of connection indices
     :rtype: collections.Iterable[(int, int)]
     """
-    print(projection.source)
-    print(projection.target)
-    print(projection.mask())
     pop_size_source = projection.source.size() #projection.source.neurons.size()
     pop_size_target = projection.target.size()
     if isinstance(projection, ConnectivityPattern): #projection.connections

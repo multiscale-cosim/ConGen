@@ -19,6 +19,8 @@ def parse_arguments():
                         help="Use Nest")
     parser.add_argument('-m', '--multiscale', type=bool, default=False, metavar="use_multiscale",
                         help="Generate a multiscale simulation")
+    parser.add_argument('-l', '--multiscale-labels', type=str, default='{"NEST":"l","TVB":"Brain_region_"}', metavar="multiscale_labels",
+                        help="Define multiscale labels for model")
     parser.add_argument('-c', '--write-connections', action='store_true',
                         help="Instead of simulating the network, parse the connections and write them to output")
     parser.add_argument('--nest-options')
