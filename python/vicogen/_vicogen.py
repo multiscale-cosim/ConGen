@@ -4,6 +4,7 @@ import sys
 import logging
 
 import neuroml #from .
+import json
 
 
 def parse_model(filename):
@@ -17,6 +18,21 @@ def parse_model(filename):
     """
     with open(filename, 'r') as f:
         return neuroml.read_xml(f)
+
+
+def parse_model_multiscale(filename, tags=["NEST_","TVB_"]):
+    """
+    Parse a NeuroML file for multiscale simulation
+
+    :param filename: The name of the NeuroML file to parse
+    :type filename: str
+    :param tags: Tags used to split the hierarchies in model
+    :type tags: str array
+    :return: The parsed network model
+    :rtype: neuroml.NetworkModel
+    """
+    with open(filename, 'r') as f:
+        return neuroml.read_xml_multiscale(f, tags)
 
 
 def print_connections(model, out=sys.stdout):
@@ -69,9 +85,9 @@ def build_nest_multiscale_file(model, options=None):
     """
     from . import _nest
 
-    return _nest.nest_build_model(model, options)
+    return _nest.nest_build_multiscale_file(model, options)
 
-def build_tvb_multiscale_file(model, options=None):
+def build_tvb_multiscale_file(tvb_model, tvb_label, options=None):
     """
     Build the multiscale TVB file
 
@@ -81,7 +97,7 @@ def build_tvb_multiscale_file(model, options=None):
     """
     from . import _tvb
 
-    return _tvb.tvb_build_model(model, options)
+    return _tvb.tvb_build_model(tvb_model, tvb_label, options)
 
 def build_translator_multiscale_file(model, options=None):
     """
@@ -93,7 +109,7 @@ def build_translator_multiscale_file(model, options=None):
     """
     from . import _translator
 
-    return _translator.translator_build_multiscale_file(model, options)
+    _translator.build_translator_file(model, options)
 
 def simulate_nest_model(model, sim_time=100.0, options=None):
     """
@@ -128,35 +144,37 @@ def simulate_tvb_model(model, sim_time=100.0, options=None):
 
     _tvb.tvb_simulate_model(tvb_model, {'sim_time': sim_time})
 
-def multiscale(model, sim_time=100.0, options=None):
+def multiscale(model, labels, sim_time=100.0, options=None):
     """
     Simulates a multiscale model. Calls build_nest_model(), build_translator_model(), build_tvb_model() with the NetworkModel object.
-    :param model: The model to simulate
+    :param models: The models at each scale
     :type model:neuroml.NetworkModel
     :return:
     """
     from . import _tvb
     from . import _nest
-    from . import _tvb_to_nest
-    from . import _nest_to_tvb
-
-
-    tvb_model = build_tvb_file(model, options)
     
 
+    nest_model = build_nest_model(model["NEST"], options)
+    build_nest_multiscale_file(nest_model, options)
+    build_tvb_multiscale_file(model["TVB"], labels["TVB"], options)
+    build_translator_multiscale_file(nest_model)    
 
 def handle_arguments(args):
     logging.basicConfig(level=args.loglevel)
-
-    model = neuroml.read_xml(args.modelfile)
-    if args.write_connections:
-        # If -c or --write-connections is active, only print connectivity and return
-        print_connections(model, args.outfile)
-        return
-    elif args.simulate:
-        if args.multiscale:
-            multiscale(model, args.simulate, {})
-
-        elif args.nest:
-            simulate_nest_model(model, args.simulate, {})
-
+    
+    if args.multiscale:
+        labels = json.loads(args.multiscale_labels)
+        models = neuroml.read_xml_multiscale(args.modelfile, labels)
+        multiscale(models, labels, args.simulate, {})
+    else :
+        model = neuroml.read_xml(args.modelfile)
+        if args.write_connections:
+            # If -c or --write-connections is active, only print connectivity and return
+            print_connections(model, args.outfile)
+            return
+        elif args.simulate:
+            if  args.nest:
+                simulate_nest_model(model, args.simulate, {})
+            elif  args.tvb:
+                simulate_tvb_model(model, args.simulate, {})
